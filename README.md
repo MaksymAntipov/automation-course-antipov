@@ -12,4 +12,4 @@
 ##Book
 1. Java core Volume 1 - Cay Horstman
 2. Clean Code
-3. 
+3. Effective Java
