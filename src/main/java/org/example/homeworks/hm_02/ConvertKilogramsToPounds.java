@@ -17,8 +17,8 @@ public class ConvertKilogramsToPounds {
         double z = 33; // ввести значение в киллограммах
         double t = 2.20462;
 
-        double i = z/t; // сколько килограммов в фунтах
-        System.out.print("Килограмов в фунтах: ");
+        double i = z/t; // сколько килограмм в фунтах
+        System.out.print("Килограмм в фунтах: ");
         System.out.println(i);
 
 
