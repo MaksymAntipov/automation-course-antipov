@@ -1,17 +1,18 @@
-package org.example.homeworks.hm_02;
+package org.example.homeworks.hw_02;
 
 import java.util.Scanner;
 
-public class CelsiusToFahrenheit {
+public class ConvertCelsiusToKelvin {
 
     public static void main(String[] args) {
+
 
         System.out.println("Введите значение в цельсиях:");
         Scanner in = new Scanner(System.in);
         int c = in.nextInt();
 
-        double f = c * 9. / 5 + 32;
-        System.out.print("Градусов в фаренгейтах: ");
-        System.out.println(f);
+        double k = c + 273.16;
+        System.out.print("Градусов в Кельфинах: ");
+        System.out.println(k);
     }
 }

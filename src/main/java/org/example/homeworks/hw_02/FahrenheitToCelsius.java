@@ -1,4 +1,4 @@
-package org.example.homeworks.hm_02;
+package org.example.homeworks.hw_02;
 
 public class FahrenheitToCelsius {
 
