@@ -1,6 +1,6 @@
 package org.example.homeworks.hw_03;
 
-public class CheckOddEven {
+public class CheckOddEven_02 {
     public static void main(String[] args) {
 
         int num = 2;

@@ -1,6 +1,6 @@
 package org.example.homeworks.hw_03;
 
-public class PrintNumberInWord_switch {
+public class PrintNumberInWord_switch_03 {
 
     public static void main(String[] args) {
 

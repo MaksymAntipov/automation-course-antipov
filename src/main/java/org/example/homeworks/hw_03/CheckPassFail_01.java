@@ -1,6 +1,6 @@
 package org.example.homeworks.hw_03;
 
-public class CheckPassFail {
+public class CheckPassFail_01 {
 
     public static void main(String[] args) {
 
