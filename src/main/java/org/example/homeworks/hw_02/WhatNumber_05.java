@@ -1,4 +1,4 @@
-package org.example.homeworks.hw_03;
+package org.example.homeworks.hw_02;
 
 public class WhatNumber_05 {
     public static void main(String[] args) {

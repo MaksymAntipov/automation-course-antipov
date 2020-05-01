@@ -1,4 +1,4 @@
-package org.example.homeworks.hw_05;
+package org.example.homeworks.hw_04;
 
 public class TemperatureKC02 {
     public static void main(String[] args) {
