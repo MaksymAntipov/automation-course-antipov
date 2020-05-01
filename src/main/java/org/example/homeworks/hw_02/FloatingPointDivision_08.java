@@ -1,4 +1,4 @@
-package org.example.homeworks.hw_03;
+package org.example.homeworks.hw_02;
 
 import javax.swing.*;
 

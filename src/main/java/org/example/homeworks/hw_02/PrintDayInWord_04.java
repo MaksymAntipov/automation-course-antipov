@@ -1,4 +1,4 @@
-package org.example.homeworks.hw_03;
+package org.example.homeworks.hw_02;
 
 public class PrintDayInWord_04 {
     public static void main(String[] args) {
