@@ -11,7 +11,7 @@ public class CountLetters02 {
 
         String s1 = "Text TEXT texT";
         char[] s2 = s1.toCharArray();
-        char x = 't';
+        char x = 't'; // ввести искомый символ
         int y = 0;
 
         for (int i = 0; i<= s2.length-1; i++)
@@ -19,6 +19,8 @@ public class CountLetters02 {
             if(x == s2[i])
             {
                 y+=1;
-                System.out.println("Символов "+ y);
             }
+        {
+        System.out.println("Символов "+ y);
+        }
 }}
