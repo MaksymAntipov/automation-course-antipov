@@ -9,7 +9,7 @@ public class CountLetters02 {
 
     public static void main(String[] args) {
 
-        String s1 = "ttthgyrft";
+        String s1 = "Text TEXT texT";
         char[] s2 = s1.toCharArray();
         char x = 't';
         int y = 0;
@@ -21,6 +21,4 @@ public class CountLetters02 {
                 y+=1;
                 System.out.println("Символов "+ y);
             }
-            else {
-                System.out.println("В тексте нет символа " + x);}
 }}
