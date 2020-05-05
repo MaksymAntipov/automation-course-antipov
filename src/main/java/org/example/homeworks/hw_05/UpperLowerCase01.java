@@ -1,6 +1,6 @@
 package org.example.homeworks.hw_05;
 
-public class UpperCase01 {
+public class UpperLowerCase01 {
 
     public static void main(String[] args) {
 
@@ -8,6 +8,8 @@ public class UpperCase01 {
         {
             System.out.println(s1.toUpperCase());
         }
-
+        {
+            System.out.println(s1.toLowerCase());
+        }
     }
 }
