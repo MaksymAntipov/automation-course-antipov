@@ -1,6 +1,6 @@
 package org.example.homeworks.hw_05;
 
-public class SquareWordPatterns06 {
+public class SquareWordPatterns07 {
 
     public static void main(String[] args) {
 
