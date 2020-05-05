@@ -11,7 +11,7 @@ public class CountLetters02 {
 
         String s1 = "Text TEXT texT";
         char[] s2 = s1.toCharArray();
-        char x = 't'; // ввести искомый символ
+        char x = 'E'; // ввести искомый символ
         int y = 0;
 
         for (int i = 0; i<= s2.length-1; i++)
