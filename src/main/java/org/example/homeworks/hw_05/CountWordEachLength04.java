@@ -12,7 +12,6 @@ public class CountWordEachLength04 {
 
         for (int i = 0; i<= s2.length-1; i++)
 
-
             if(x == s2[i])
     {
         y+=1;
