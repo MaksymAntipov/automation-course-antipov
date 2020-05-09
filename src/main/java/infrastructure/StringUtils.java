@@ -4,15 +4,13 @@ import java.util.Random;
 
 public class StringUtils {
 
-
-
     public static String randomString(String type, int length) {
 
         String alphabet;
 
         switch (type)
         {
-            case"Alpha": alphabet = "abcdefghijklmnopqrtuvwxyz";
+            case"ALPHA": alphabet = "abcdefghijklmnopqrtuvwxyz";
                 break;
             case "NUMERIC": alphabet = "0123456789";
                 break;
@@ -21,7 +19,6 @@ public class StringUtils {
                 break;
             default: return null;
         }
-
         Random r = new Random();
         String result = "";
 
