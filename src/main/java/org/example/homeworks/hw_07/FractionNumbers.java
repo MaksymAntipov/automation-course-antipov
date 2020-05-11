@@ -19,7 +19,7 @@ public class FractionNumbers {
                 '}';
     }
 
-    public static double Calc (double x, double y, char z)
+    public static double Calc(double x, double y, char z)
     {
         if (z == '-') {
             double res = x - y;
