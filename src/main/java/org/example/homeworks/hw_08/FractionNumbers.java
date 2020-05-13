@@ -29,13 +29,13 @@ public class FractionNumbers {
         return new FractionNumbers(nominator,denominator);
     }
     public FractionNumbers multiply(FractionNumbers other){
-        this.nominator= this.nominator * other.getDenominator() * this.denominator* other.getDenominator();
+        this.nominator= this.nominator * other.getDenominator() ;
         this.denominator = this.denominator * other.getDenominator();
         return new FractionNumbers(nominator,denominator);
     }
     public FractionNumbers divide(FractionNumbers other){
-        this.nominator= this.nominator * other.getDenominator() - this.denominator* other.getDenominator();
-        this.denominator = this.denominator * other.getDenominator();
+        this.nominator= this.denominator * other.getDenominator();
+        this.denominator = this.nominator * other.getDenominator() ;
         return new FractionNumbers(nominator,denominator);
     }
     @Override
