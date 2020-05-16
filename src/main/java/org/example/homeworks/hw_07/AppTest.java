@@ -1,6 +1,4 @@
-package org.example.homeworks.hw_08;
-
-import static org.example.homeworks.hw_08.FractionNumbers.*;
+package org.example.homeworks.hw_07;
 
 public class AppTest {
     public static void main(String[] args) {

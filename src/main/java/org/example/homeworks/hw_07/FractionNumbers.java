@@ -1,4 +1,4 @@
-package org.example.homeworks.hw_08;
+package org.example.homeworks.hw_07;
 
 public class FractionNumbers {
 
