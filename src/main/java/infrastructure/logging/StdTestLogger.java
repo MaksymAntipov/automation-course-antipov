@@ -5,7 +5,6 @@ import java.util.Date;
 
 public class StdTestLogger extends TestLogger{
 
-    private int step = 1;
 
    @Override
     public void log(String msg)
