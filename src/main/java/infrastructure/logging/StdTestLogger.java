@@ -1,9 +1,9 @@
-package infrastructure;
+package infrastructure.logging;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TestLogger {
+public class StdTestLogger {
 
     private int step = 1;
 
@@ -13,7 +13,6 @@ public class TestLogger {
 
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SSS");
         String time = sdf.format(new Date());
-
 
         String methodName = Thread.currentThread().getName();
         LogEntry += step + ") " + time + "[" + methodName + "]" + msg;
