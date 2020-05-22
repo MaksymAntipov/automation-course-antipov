@@ -1,6 +1,7 @@
 package infrastructure;
 
 import infrastructure.logging.StdTestLogger;
+import infrastructure.logging.TestLogger;
 
 public class TestBase {
 

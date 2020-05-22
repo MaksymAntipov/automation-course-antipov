@@ -3,10 +3,11 @@ package infrastructure.logging;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class StdTestLogger {
+public class StdTestLogger extends TestLogger{
 
     private int step = 1;
 
+   @Override
     public void log(String msg)
     {
         String LogEntry = "";
