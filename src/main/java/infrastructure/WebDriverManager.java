@@ -7,11 +7,19 @@ public class WebDriverManager {
 
         switch (browserType) {
             case "chrome":
-                return "Google Chrome";
+                return "new ChromeDriver()";
             case "firefox":
-                return "Mozilla";
+                return "new FirefoxDriver()";
             default:
                 return "";
+        }
+    }
+
+    public void destroyBrowser (String browser)
+    {
+
+        if (browser != null){
+            System.out.println(browser+ "quit()");
         }
     }
 }

@@ -1,5 +1,6 @@
 package infrastructure;
 
+import infrastructure.logging.FileTestLogger;
 import infrastructure.logging.StdTestLogger;
 import infrastructure.logging.TestLogger;
 
@@ -13,7 +14,7 @@ public class TestBase {
     public void setup()
     {
         wdm = new WebDriverManager();
-        logger = new StdTestLogger();
+        logger = getLogger();
       browser = wdm.createBrowser();
 
       beforeTest();
@@ -28,4 +29,11 @@ public class TestBase {
     protected void beforeTest(){}
 
     protected void afterTest() {}
+
+    private TestLogger getLogger(){
+
+        return ConfigurationManager.getInstance().getRunEnv().equals("local")?
+                new StdTestLogger(): new FileTestLogger();
+
+    }
 }
