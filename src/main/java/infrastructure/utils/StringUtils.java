@@ -1,4 +1,4 @@
-package infrastructure;
+package infrastructure.utils;
 
 import java.util.Random;
 

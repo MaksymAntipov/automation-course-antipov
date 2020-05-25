@@ -1,5 +1,7 @@
-package infrastructure;
+package infrastructure.base;
 
+import infrastructure.WebDriverManager;
+import infrastructure.config.ConfigurationManager;
 import infrastructure.logging.FileTestLogger;
 import infrastructure.logging.StdTestLogger;
 import infrastructure.logging.TestLogger;

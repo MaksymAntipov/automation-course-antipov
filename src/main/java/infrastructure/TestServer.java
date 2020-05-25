@@ -1,5 +1,7 @@
 package infrastructure;
 
+import infrastructure.config.ConfigurationManager;
+
 public class TestServer {
 
 
