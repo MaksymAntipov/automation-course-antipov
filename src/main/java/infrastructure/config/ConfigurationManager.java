@@ -20,11 +20,8 @@ public class ConfigurationManager {
     {
         return getEnvironmentVariableOrDefault("testBrowser","chrome");
     }
-    public String getTestEnvironment(){return getEnvironmentVariableOrDefault("testEnv","prod");
-    }
-
-    public String getRunEnv(){
-        return getEnvironmentVariableOrDefault("runEnv","local");
+    public String getTestEnvironment(){return getEnvironmentVariableOrDefault("testEnv","prod");}
+    public String getRunOn(){return getEnvironmentVariableOrDefault("runOn","local");
 
     }
 }
