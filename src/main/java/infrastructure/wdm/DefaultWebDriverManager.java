@@ -24,6 +24,7 @@ public class DefaultWebDriverManager implements WedDriverManager {
                 break;
             case "cloud":
                 factory = new CloudWebdriverFactory();
+                break;
             default:
                 return "";
         }

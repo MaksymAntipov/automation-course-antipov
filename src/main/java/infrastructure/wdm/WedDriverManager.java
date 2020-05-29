@@ -3,6 +3,6 @@ package infrastructure.wdm;
 public interface WedDriverManager {
 
     String getBrowser();
-    void destroyBrowse(String browser);
 
+    void destroyBrowse(String browser);
 }
