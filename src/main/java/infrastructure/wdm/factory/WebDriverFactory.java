@@ -1,4 +1,4 @@
-package infrastructure.wdm;
+package infrastructure.wdm.factory;
 
 public interface WebDriverFactory {
 

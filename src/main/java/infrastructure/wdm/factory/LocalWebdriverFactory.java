@@ -1,4 +1,4 @@
-package infrastructure.wdm;
+package infrastructure.wdm.factory;
 
 import infrastructure.config.ConfigurationManager;
 
