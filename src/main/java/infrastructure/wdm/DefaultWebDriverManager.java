@@ -12,7 +12,6 @@ public class DefaultWebDriverManager implements WedDriverManager {
     public String getBrowser() {
         String runOn = ConfigurationManager.getInstance().getRunOn();
 
-
         WebDriverFactory factory;
 
         switch (runOn){
@@ -30,7 +29,6 @@ public class DefaultWebDriverManager implements WedDriverManager {
         }
         return  factory.create();
     }
-
     @Override
     public void destroyBrowse(String browser) {
         if (browser != null){

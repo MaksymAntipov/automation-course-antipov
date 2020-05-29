@@ -5,10 +5,11 @@ import infrastructure.logging.FileTestLogger;
 import infrastructure.logging.StdTestLogger;
 import infrastructure.logging.TestLogger;
 import infrastructure.wdm.DefaultWebDriverManager;
+import infrastructure.wdm.WedDriverManager;
 
 public class TestBase {
 
-    private WebDriverManager wdm;
+    private WedDriverManager wdm;
     protected String browser;
 
     protected TestLogger logger;
@@ -25,7 +26,7 @@ public class TestBase {
     public  void cleanup(){
             afterTest();
 
-        wdm.destroyBrowser(browser);
+        wdm.destroyBrowse(browser);
     }
 
     protected void beforeTest(){}
