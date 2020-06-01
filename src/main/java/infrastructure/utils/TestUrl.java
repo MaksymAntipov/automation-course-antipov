@@ -54,7 +54,7 @@ public class TestUrl {
         }
 
         public Builder withParam(String param) {
-            url.params +=param + "&";
+            url.params += param + "&";
             return this;
         }
 
@@ -62,29 +62,34 @@ public class TestUrl {
             url.params += key + "=" + value + "&";
             return this;
         }
-        public String build (){
 
-        String result = "";
-        if (url.protocol != null && url.protocol.isBlank())
-        return result+=url.protocol;
+        public String build() {
 
-        if (url.protocol.endsWith("://"))
-            result +="://";
+            String result = "";
+            if (url.protocol != null && !url.protocol.isBlank())
+                result += url.protocol;
 
-        if (url.domain != null && !url.domain.isBlank())
-            result += url.domain;
+            if (!url.protocol.endsWith("://"))
+                result += "://";
 
+            if (url.domain != null && !url.domain.isBlank())
+                result += url.domain;
 
+            if (url.port != null && !url.port.isBlank())
+                result += ":" + url.port;
 
+            if (url.path != null && !url.path.isBlank())
 
+                result += url.path.startsWith("/") ? url.path : "/" + url.path;
 
+            if (url.params != null && url.params.isBlank())
+                result += "?" + url.params;
 
-        return result;
+            return result;
+
+        }
 
     }
-
-
-
 
     @Override
     public String toString() {
