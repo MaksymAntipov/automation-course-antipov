@@ -11,19 +11,11 @@ public class TestUrl {
     private TestUrl() {
     }
 
-    public TestUrl(String protocol, String domain, String port, String path, String params) {
-        this.protocol = protocol;
-        this.domain = domain;
-        this.port = port;
-        this.path = path;
-        this.params = params;
-    }
-
     public String getProtocol() {return protocol;}
 
     public String getDomain() {return domain;}
 
-    public int getPort() {return port;}
+    public String getPort() {return port;}
 
     public String getPath() {return path;}
 
@@ -70,13 +62,28 @@ public class TestUrl {
             url.params += key + "=" + value + "&";
             return this;
         }
-    }
         public String build (){
 
         String result = "";
-        if (url.protocol +=)
-        return "";
-}
+        if (url.protocol != null && url.protocol.isBlank())
+        return result+=url.protocol;
+
+        if (url.protocol.endsWith("://"))
+            result +="://";
+
+        if (url.domain != null && !url.domain.isBlank())
+            result += url.domain;
+
+
+
+
+
+
+        return result;
+
+    }
+
+
 
 
     @Override
