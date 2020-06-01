@@ -12,7 +12,6 @@ public String getUrl(){
 
     switch (testEnv)
     {
-
         case "prod":
             return "http://apteka24.ua";
         case "ga":
