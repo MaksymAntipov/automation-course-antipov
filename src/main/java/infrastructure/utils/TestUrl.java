@@ -23,20 +23,61 @@ public class TestUrl {
 
     public String getDomain() {return domain;}
 
-    public String getPort() {return port;}
+    public int getPort() {return port;}
 
     public String getPath() {return path;}
 
     public String getParams() {return params;}
 
-    public static class Builder{
+    public static class Builder {
         private TestUrl url;
 
-        public Builder(){
-        url = new TestUrl();
+        public Builder() {
+            url = new TestUrl();
+        }
 
+        public Builder withProtocol(String protocol) {
+            url.protocol = protocol;
+            return this;
+        }
+
+        public Builder withDomain(String domain) {
+
+            url.domain = domain;
+            return this;
+        }
+
+        public Builder withPort(int port) {
+            if (port < 0 && port > 65535)
+                url.port = "";
+
+            url.port = "" + port;
+            return this;
+        }
+
+        public Builder withPath(String path) {
+
+            url.path = path;
+            return this;
+        }
+
+        public Builder withParam(String param) {
+            url.params +=param + "&";
+            return this;
+        }
+
+        public Builder withParam(String key, String value) {
+            url.params += key + "=" + value + "&";
+            return this;
         }
     }
+        public String build (){
+
+        String result = "";
+        if (url.protocol +=)
+        return "";
+}
+
 
     @Override
     public String toString() {
